@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="basestyle.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script type="text/javascript" src="scripts.js"></script>
+        <title>Interactive Movement</title>
+    </head>
+
+    <body>
+        <div class="images">
+            <div class="block1">
+                <img src="./img/samus.jpg">
+                <p>(Metroid Dread)</p>
+                <p>
+                    Probably the biggest surprise of Nintendo's E3 presentation was the announcement of Metroid Dread. Fans of the Metroid franchise have been patiently waiting for the release of Metroid Prime 4, but coming in 2022 we can enjoy this brand new 2-D title. Based on what we've seen so far, it appears that this will be concluding the ark of Samus with the Metriods, but does not mean that her story is coming to a close completely. The gameplay that was revealed looks interesting and features a creature that will stalk Samus and cause the player to constantly move throughout the levels and be challenged to think on their feet. Only time will tell what this new title holds in store for the metroid series, but it looks quite promising so far! 
+                </p>
+            </div>
+
+            <div class="block2">
+                <img src="./img/wario.jpg">
+                <p>(Wario Ware)</p>
+                <p>
+                    Before this announcement many Nintendo fans were asked if they would be willing to purchase a new WarioWare title at the price point of $49 and it appears we have the supply to meet the confirmed demand. In this new title we are going to be able to control the cast of familiar characters throughout the series. Perhaps the most interesting new feature is the addition of a second player. For some this may be their first entry in the series, but this new title coming to the switch is refreshing. Enjoy quick burst gameplay with your friends and on the go with WarioWare Get it Together! 
+                </p>
+            </div>
+
+            <div class="block3">
+                <img src="./img/hero.png">
+                <p>(Advance Wars 1+2) </p>
+                <p>
+                    Another surprise that no one saw coming was the announcement regarding the remaster of Advance Wars 1+2. To those who are unfamiliar with this title, it was first released back on the Game Boy Advance and features addictive, tactical gameplay. What makes this a remaster? From what we've seen so far we can tell that brand new animations and a fresh coat of paint has been applied graphically to both titles and it looks stunning. Once again we highly recommend those that haven't played this series in the past, give it a try now and enjoy its revamped visuals as well as fun gameplay. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="popup" onclick="showPopup(), reveal()"> <p><a class="btn" id="showme">NEXT PAGE</a></p>
+            <span class="popuptext" id="myPopup">Please accept our cookies first! Click on the cookie~ (You may need to refresh)</span> <!--This is your popup content-->
+            </div>
+        
+
+        <div id="toolbar">
+            <p><b>Please accept our raisin oatmeal cookies!</b><img src="./img/cookie.png" onclick="window.location='thirdpage.html';"></p>
+            <div class="exit" onclick="hide()"> &times
+            </div>
+        </div>
+
+    </body>
+
+</html>

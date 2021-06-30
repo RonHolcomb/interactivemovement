@@ -1,0 +1,275 @@
+html {
+    background-image: url(./img/bg.jpg);
+    color: white;
+}
+
+body {
+    text-align: center;
+    padding: 25px 100px;
+}
+
+h1 {
+    font-size: 10px;
+    margin-top: -10px;
+    font-weight: normal;
+}
+
+p a {
+    color: rgb(59, 47, 47);
+    font-size: x-large;
+    padding: 5px 10px;
+    border: 2px solid rgb(59, 47, 47);
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(151, 109, 81);
+    animation: fadeIn;
+    transition: 0.15s;
+    visibility: hidden;
+}
+  
+p a:hover {
+    color: white;
+    font-size: x-large;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(59, 47, 47);
+}
+
+#showme {
+    visibility: visible;
+}
+
+.popup {
+    font-size: large;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(59, 47, 47);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(59, 47, 47) transparent transparent transparent;
+}
+  
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.exit {
+    color: rgb(59, 47, 47);
+    display: inline;
+    position: fixed;
+    padding-top: 25px;
+    right: 20px;
+    font-size: 32px;
+    -webkit-animation: spinIt 3s infinite;
+    animation: spinIt 3s infinite;
+    animation-play-state: running;
+}
+
+.exit:hover {
+    animation-play-state: paused;
+}
+
+.checked {
+    color: orange;
+}
+
+#toolbar {
+    position: fixed; 
+    white-space: nowrap;
+    bottom: 0px; 
+    left: 0px; 
+    height: 80px;
+    width: 100%;
+    color: #fff; 
+    background: rgb(151, 109, 81);
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+#toolbar p {
+    color: rgb(59, 47, 47);
+    padding-top: 12px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#toolbar img {
+    padding-left: 10px;
+    margin-top: -5px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: bounce;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#haha {
+    visibility: hidden;
+    background:rgb(151, 109, 81); 
+    top:455px; 
+    left:42%; 
+    width:250px; 
+    position:absolute; 
+    z-index:41;
+    padding:30px; 
+    border: none;
+    border-radius: 15px;
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+    box-shadow:0 0 10px rgba(0,0,0,0.4)
+}
+
+#haha > button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(85, 60, 44);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px rgb(59, 47, 47);
+  }
+  
+#haha > button:hover {
+    background-color: rgb(63, 44, 31);
+}
+
+#haha > button:active {
+    background-color: rgb(63, 44, 31);
+    box-shadow: 0 0px rgb(59, 47, 47);
+    transform: translateY(4px);
+}
+
+#haha > p img {
+    padding-left: 10px;
+    margin-top: -5px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: swing;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.block1 {
+    /*border: 3px solid #0f0;*/
+    color: black;
+    background-color: rgb(255, 251, 238);
+    margin-bottom: 15px;
+    overflow:auto;
+    animation: slideinleft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.block2 {
+    /*border: 3px solid #0f0;*/
+    color: black;
+    background-color: rgb(255, 251, 238);
+    margin-bottom: 15px;
+    overflow:auto;
+    animation: slideinright;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.block3 {
+    /*border: 3px solid #0f0;*/
+    color: black;
+    background-color: rgb(255, 251, 238);
+    margin-bottom: 15px;
+    overflow:auto;
+    animation: slideinleft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.block1 img {
+    float: left;
+    margin-right:1rem;
+    height: 250px;
+}
+
+.block2 img {
+    float: right;
+    margin-left:1rem;
+    height: 250px;
+}
+
+.block3 img {
+    float: left;
+    margin-right:1rem;
+    height: 250px;
+}
+  
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to   {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to   {opacity:1 ;}
+}
+
+@keyframes spinIt {
+    from {transform: rotateY(0deg);}
+    to   {transform: rotateY(360deg);}
+
+}
+
+@keyframes slidein {
+    from {margin-bottom: -250%;}
+    to   {margin-bottom: 0%;}
+}
+
+@keyframes slideinleft {
+    from {margin-left: -250%;}
+    to   {margin-left: 0%;}
+}
+
+@keyframes slideinright {
+    from {margin-right: -250%;}
+    to   {margin-right: 0%;}
+}
